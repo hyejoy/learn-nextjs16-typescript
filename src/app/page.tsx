@@ -5,8 +5,8 @@ export default function Page() {
   return (
     <>
       <h1>Page Component</h1>
-      <ClientWrapper>
-        <DataFetch />
+      <ClientWrapper name="client">
+        <DataFetch name="fetch" />
       </ClientWrapper>
     </>
   );

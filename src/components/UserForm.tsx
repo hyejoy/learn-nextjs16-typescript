@@ -1,5 +1,4 @@
-"use client";
-export default function ClientWrapper({
+export default function UserForm({
   name,
   children,
 }: {
@@ -8,7 +7,7 @@ export default function ClientWrapper({
 }) {
   return (
     <>
-      <h1>{name}</h1>
+      <h1>UserForm Component: {name}</h1>
       {children}
     </>
   );
