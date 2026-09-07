@@ -4,9 +4,9 @@ import SvgClose from "./svg/SvgClose";
 import SvgPencil from "./svg/SvgPencil";
 import Input from "./html/Input";
 import { Todo } from "@/types/todoType";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function TodoListItem({
+export default React.memo(function TodoListItem({
   todo,
   toggleTodo,
   updateTodo,
@@ -64,4 +64,4 @@ export default function TodoListItem({
       </div>
     </li>
   );
-}
+});
